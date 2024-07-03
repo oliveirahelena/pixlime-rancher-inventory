@@ -31,25 +31,25 @@ class Inventory {
             this.slots.push(new InventorySlot());
         }
         this.sprite = sprites.create(img`
-    ..bbbbbbbbbbb.....bbbbbbbbbbb.....bbbbbbbbbbb.....bbbbbbbbbbb..
-    .bbbbbbbbbbbbb...bbbbbbbbbbbbb...bbbbbbbbbbbbb...bbbbbbbbbbbbb.
-    bbeeeeeeeeeeebb.bbeeeeeeeeeeebb.bbeeeeeeeeeeebb.bbeeeeeeeeeeebb
-    bbefeeeeeeefebb.bbefeeeeeeefebb.bbefeeeeeeefebb.bbefeeeeeeefebb
-    bbeeffeeeffeebb.bbeeffeeeffeebb.bbeeffeeeffeebb.bbeeffeeeffeebb
-    bbeeeefffeeeebb.bbeeeefffeeeebb.bbeeeefffeeeebb.bbeeeefffeeeebb
-    bbeeeefffeeeebb.bbeeeefffeeeebb.bbeeeefffeeeebb.bbeeeefffeeeebb
-    bbeeffeeeffeebb.bbeeffeeeffeebb.bbeeffeeeffeebb.bbeeffeeeffeebb
-    bbefeeeeeeefebb.bbefeeeeeeefebb.bbefeeeeeeefebb.bbefeeeeeeefebb
-    bbeeeeeeeeeeebb.bbeeeeeeeeeeebb.bbeeeeeeeeeeebb.bbeeeeeeeeeeebb
-    bbbbbbbbbbbbbbb.bbbbbbbbbbbbbbb.bbbbbbbbbbbbbbb.bbbbbbbbbbbbbbb
-    bbbbbbbbbbbbbbb.bbbbbbbbbbbbbbb.bbbbbbbbbbbbbbb.bbbbbbbbbbbbbbb
-    bbbbbbbbbbbbbbb.bbbbbbbbbbbbbbb.bbbbbbbbbbbbbbb.bbbbbbbbbbbbbbb
-    bbbbbbbbbbbbbbb.bbbbbbbbbbbbbbb.bbbbbbbbbbbbbbb.bbbbbbbbbbbbbbb
-    bbbbbbbbbbbbbbb.bbbbbbbbbbbbbbb.bbbbbbbbbbbbbbb.bbbbbbbbbbbbbbb
-    bbbbbbbbbbbbbbb.bbbbbbbbbbbbbbb.bbbbbbbbbbbbbbb.bbbbbbbbbbbbbbb
-    .bbbbbbbbbbbbb...bbbbbbbbbbbbb...bbbbbbbbbbbbb...bbbbbbbbbbbbb.
-    ..bbbbbbbbbbb.....bbbbbbbbbbb.....bbbbbbbbbbb.....bbbbbbbbbbb..
-    `, SpriteKind.InventoryBar);
+            ..bbbbbbbbbbb.....bbbbbbbbbbb.....bbbbbbbbbbb.....bbbbbbbbbbb..
+            .bbbbbbbbbbbbb...bbbbbbbbbbbbb...bbbbbbbbbbbbb...bbbbbbbbbbbbb.
+            bbeeeeeeeeeeebb.bbeeeeeeeeeeebb.bbeeeeeeeeeeebb.bbeeeeeeeeeeebb
+            bbefeeeeeeefebb.bbefeeeeeeefebb.bbefeeeeeeefebb.bbefeeeeeeefebb
+            bbeeffeeeffeebb.bbeeffeeeffeebb.bbeeffeeeffeebb.bbeeffeeeffeebb
+            bbeeeefffeeeebb.bbeeeefffeeeebb.bbeeeefffeeeebb.bbeeeefffeeeebb
+            bbeeeefffeeeebb.bbeeeefffeeeebb.bbeeeefffeeeebb.bbeeeefffeeeebb
+            bbeeffeeeffeebb.bbeeffeeeffeebb.bbeeffeeeffeebb.bbeeffeeeffeebb
+            bbefeeeeeeefebb.bbefeeeeeeefebb.bbefeeeeeeefebb.bbefeeeeeeefebb
+            bbeeeeeeeeeeebb.bbeeeeeeeeeeebb.bbeeeeeeeeeeebb.bbeeeeeeeeeeebb
+            bbbbbbbbbbbbbbb.bbbbbbbbbbbbbbb.bbbbbbbbbbbbbbb.bbbbbbbbbbbbbbb
+            bbbbbbbbbbbbbbb.bbbbbbbbbbbbbbb.bbbbbbbbbbbbbbb.bbbbbbbbbbbbbbb
+            bbbbbbbbbbbbbbb.bbbbbbbbbbbbbbb.bbbbbbbbbbbbbbb.bbbbbbbbbbbbbbb
+            bbbbbbbbbbbbbbb.bbbbbbbbbbbbbbb.bbbbbbbbbbbbbbb.bbbbbbbbbbbbbbb
+            bbbbbbbbbbbbbbb.bbbbbbbbbbbbbbb.bbbbbbbbbbbbbbb.bbbbbbbbbbbbbbb
+            bbbbbbbbbbbbbbb.bbbbbbbbbbbbbbb.bbbbbbbbbbbbbbb.bbbbbbbbbbbbbbb
+            .bbbbbbbbbbbbb...bbbbbbbbbbbbb...bbbbbbbbbbbbb...bbbbbbbbbbbbb.
+            ..bbbbbbbbbbb.....bbbbbbbbbbb.....bbbbbbbbbbb.....bbbbbbbbbbb..
+        `, SpriteKind.InventoryBar);
         this.sprite.x = 80;
         this.sprite.bottom = 116;
         this.sprite.z = 99;
@@ -137,7 +137,7 @@ class Inventory {
                 slot.quantityText.destroy();
             }
 
-            slot.quantityText = textsprite.create("" + slot.quantity, 0, 0);
+            slot.quantityText = textsprite.create("" + slot.quantity, 11, 13);
             slot.quantityText.setPosition(this.sprite.left + 6 + i * 16 + 2, this.sprite.top + 6 + 10);
             slot.quantityText.setMaxFontHeight(5);
             slot.quantityText.z = 101;
